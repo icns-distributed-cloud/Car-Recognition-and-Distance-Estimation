@@ -43,7 +43,7 @@ if __name__ == '__main__':
     print(dd-cc)
     model_distance.eval()
     
-    dataset = ListDataset('original_data/valid.txt', multiscale=False)
+    dataset = ListDataset('data/test.txt', multiscale=False)
     dataloader = torch.utils.data.DataLoader(
         dataset,
         batch_size=1,
