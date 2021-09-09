@@ -1,0 +1,4 @@
+classes=1
+train=detection/train.txt
+valid=detection/valid.txt
+names=detection/classes.names
