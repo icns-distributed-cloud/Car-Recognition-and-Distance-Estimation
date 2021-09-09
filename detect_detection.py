@@ -2,7 +2,7 @@ from __future__ import division
 
 from models import *
 from utils.utils import *
-from utils.datasets import *
+from utils.datasets_detection import *
 
 import os
 import sys
@@ -48,7 +48,7 @@ def changeBGR2RGB(img):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--image_folder", type=str, default="data/detection/images", help="path to dataset")
+    parser.add_argument("--image_folder", type=str, default="data/detection/test", help="path to dataset")
     parser.add_argument("--video_file", type=str, default="0", help="path to dataset")
     parser.add_argument("--model_def", type=str, default="config/yolov3-tiny.cfg", help="path to model definition file")
     # parser.add_argument("--weights_path", type=str, default="weights/yolov3-tiny.weights", help="path to weights file")
