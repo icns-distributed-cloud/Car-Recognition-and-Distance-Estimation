@@ -13,10 +13,11 @@ import cv2
 import time
 
 if __name__ == '__main__':
+    # print('hello')
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     vgg16 = torchvision.models.vgg16(pretrained=True).to(device)
-
+    # print('hi')
     feature_extractor = vgg16.features
     feature_extractor.eval()
     
